@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    ,<div class="container" style="text-align: center">
+        {% include 'navbar.html' %}
+        <form action= '/home/' method="POST">
+         {% csrf_token %}
+        <input type="checkbox" name="check">
+        <button>Send</button>
+        </form>
+
+        <h1>This is our offical website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae porro voluptate architecto quam sunt iure fugit doloremque, reprehenderit earum officiis suscipit magni natus maiores delectus quaerat blanditiis asperiores facere voluptatem ipsam culpa? Voluptatibus id impedit odio, ratione similique sed fugit praesentium iste ducimus architecto, exercitationem sint minima molestiae tempore.</p>
+        <button>Contact US</button>
+
+        <h1>Date is {{date}}</h1>
+    </div>
+</body>
+</html>
